@@ -2,11 +2,16 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
+    alias(libs.plugins.ksp)
+    alias(libs.plugins.hilt.android)
+    alias(libs.plugins.kotlin.serialization)
 }
 
 android {
     namespace = "com.r1n1os.jetpackcomposetemplateopensource"
     compileSdk = 36
+    buildToolsVersion = "36.0.0"
+    ndkVersion = "28.1.13356709"
 
     defaultConfig {
         applicationId = "com.r1n1os.jetpackcomposetemplateopensource"
@@ -28,11 +33,13 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_11
-        targetCompatibility = JavaVersion.VERSION_11
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
     }
-    kotlinOptions {
-        jvmTarget = "11"
+    kotlin {
+        compilerOptions {
+            jvmTarget.set(org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_17)
+        }
     }
     buildFeatures {
         compose = true
@@ -40,15 +47,53 @@ android {
 }
 
 dependencies {
-
+    /**
+     * Basic
+     * */
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
+    implementation(libs.androidx.material3)
+    implementation(libs.androidx.material3.expressive)
+    /**
+     * Compose
+     * */
     implementation(libs.androidx.activity.compose)
     implementation(platform(libs.androidx.compose.bom))
     implementation(libs.androidx.ui)
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
-    implementation(libs.androidx.material3)
+    /**
+     * Navigation
+     * */
+    implementation(libs.fragment.navigation.ktx)
+    implementation(libs.navigation.compose)
+    implementation(libs.kotlinx.serialization.json)
+    /**
+     * Hilt
+     * */
+    implementation(libs.hilt.android)
+    ksp(libs.hilt.compiler)
+    implementation(libs.hilt.agp)
+    implementation(libs.hilt.navigation.compose)
+    /**
+     * Coroutines
+     * */
+    implementation(libs.coroutines.core)
+    implementation(libs.coroutines.android)
+    /**
+     * Retrofit
+     * */
+    implementation(libs.retrofit)
+    implementation(libs.gson)
+    /**
+     * Room Local Database
+     * */
+    implementation(libs.room.runtime)
+    ksp(libs.room.compiler)
+    implementation(libs.room.ktx)
+    /**
+     * Test
+     * */
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)

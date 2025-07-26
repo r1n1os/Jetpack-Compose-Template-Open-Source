@@ -1,4 +1,4 @@
-package com.r1n1os.jetpackcomposetemplateopensource
+package com.r1n1os.jetpackcomposetemplateopensource.presentation
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -12,7 +12,9 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.r1n1os.jetpackcomposetemplateopensource.ui.theme.JetpackComposeTemplateOpenSourceTheme
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

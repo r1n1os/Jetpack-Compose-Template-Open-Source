@@ -36,23 +36,36 @@ Jetpack-Compose-Template-Open-Source is a production-ready Jetpack Compose Andro
 
 ---
 
-## 🛠️ How to Use This Template to Start a New Project
+## 📋 How to Use This Repository
 
-### 1. Clone the Repository Locally
+This repository can be used as a starting point for your Android projects in two ways:
+
+### 1. Use the **“Use this template”** Button (Recommended)
+
+Click the green **“Use this template”** button at the top of this repository page to create a new repository based on this template.  
+This method gives you a clean copy without git history and lets you start fresh immediately.
+
+--- OR --- 
+
+### 2. Clone the Repository Directly
+
+Alternatively, you can clone the repository to your local machine:
+
+
+### 2.1. Clone the Repository Locally
 Click the green **“Code”** button at the top of this repository and choose one of the following:
 
 #### 📥 Clone via HTTPS or 🔐 via SSH
 Another option is to clone via 💻 CLI using the following command: 
-git clone https://github.com/your-username/android-starter-template.git
 
-Then navigate into the project directory if you are not already there:
-cd <project-folder-path>
+git clone https://github.com/r1n1os/Jetpack-Compose-Template-Open-Source
 
-### 2. Remove the Existing Git History
+### 2.2. Remove the Existing Git History
 To avoid pushing changes back to the original repository and to start with a clean Git history:
+
 rm -rf .git
 
-### 3. Initialize a New Git Repository
+### 2.3. Initialize a New Git Repository
 Start your own Git history and link it to your new project repository:
 <br>git init
 <br>git remote add origin https://github.com/your-username/your-new-project.git

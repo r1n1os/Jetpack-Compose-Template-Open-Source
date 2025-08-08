@@ -1,0 +1,6 @@
+package com.r1n1os.jetpackcomposetemplateopensource.navigations
+
+import kotlinx.serialization.Serializable
+
+@Serializable
+object ExampleRoute

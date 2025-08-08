@@ -40,38 +40,95 @@ Jetpack-Compose-Template-Open-Source is a production-ready Jetpack Compose Andro
 
 This repository can be used as a starting point for your Android projects in two ways:
 
-### 1. Use the **“Use this template”** Button (Recommended)
+---
 
-Click the green **“Use this template”** button at the top of this repository page to create a new repository based on this template.  
-This method gives you a clean copy without git history and lets you start fresh immediately.
+### ✅ Option 1: Use the “Use this template” Button (Recommended)
 
---- OR --- 
+If the repository is enabled as a template:
 
-### 2. Clone the Repository Directly
+1. Click the green **“Use this template”** button at the top-right of this repository page.
+2. Create a new repository with your own name, description, and visibility.
+3. Clone your new repository and start building — no extra steps needed!
 
-Alternatively, you can clone the repository to your local machine:
+> This method gives you a clean copy without Git history and is the easiest way to start fresh.
 
+---
 
-### 2.1. Clone the Repository Locally
-Click the green **“Code”** button at the top of this repository and choose one of the following:
+### 🛠 Option 2: Clone the Repository Directly
 
-#### 📥 Clone via HTTPS or 🔐 via SSH
-Another option is to clone via 💻 CLI using the following command: 
+If you prefer to manually clone the repository:
 
-git clone https://github.com/r1n1os/Jetpack-Compose-Template-Open-Source
+---
 
-### 2.2. Remove the Existing Git History
-To avoid pushing changes back to the original repository and to start with a clean Git history:
+#### 🔹 2.1. Clone the Repository Locally
 
+Click the green **“Code”** button on this page and choose one of the following methods:
+
+##### 📥 Clone via HTTPS
+
+```bash
+git clone https://github.com/r1n1os/Jetpack-Compose-Template-Open-Source.git
+```
+##### 🔐 Clone via SSH
+
+```bash
+git clone git@github.com:r1n1os/Jetpack-Compose-Template-Open-Source.git
+```
+
+##### 
+💻 Clone via GitHub CLI
+
+```bash
+gh repo clone r1n1os/Jetpack-Compose-Template-Open-Source
+```
+
+Then navigate into the project directory:
+
+```bash
+cd Jetpack-Compose-Template-Open-Source
+```
+
+#### 🔹 2.2. Remove the Existing Git History
+
+To disconnect from the original repository and avoid pushing to it:
+
+##### On Windows (PowerShell):
+
+```bash
+Remove-Item -Recurse -Force .git
+```
+
+##### On Mac/Linux/Git Bash:
+
+```bash
 rm -rf .git
+```
 
-### 2.3. Initialize a New Git Repository
-Start your own Git history and link it to your new project repository:
-<br>git init
-<br>git remote add origin https://github.com/your-username/your-new-project.git
-<br>git add .
-<br>git commit -m "Initial commit from Android Starter Template"
-<br>git push -u origin main
+#### 🔹 2.3. Initialize a New Git Repository
+
+Now initialize your own Git project and connect it to your own GitHub repository:
+
+```bash
+git init
+git remote add origin https://github.com/your-username/your-new-project.git
+git add .
+git commit -m "Initial commit from Android Starter Template"
+git push -u origin main
+```
+
+#### ✅ You now have your own version of the project, with full control and clean Git history.
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -118,6 +118,10 @@ git push -u origin main
 
 #### ✅ You now have your own version of the project, with full control and clean Git history.
 
+## Contribution
+
+ If you have any feedback, found a bug or need something that is missing feel free to create an issue in the following link. https://github.com/r1n1os/Jetpack-Compose-Template-Open-Source/issues
+
 
 
 

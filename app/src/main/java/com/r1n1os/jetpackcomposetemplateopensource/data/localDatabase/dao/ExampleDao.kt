@@ -9,7 +9,7 @@ import kotlinx.coroutines.flow.Flow
 @Dao
 interface ExampleDao {
     @Upsert
-    suspend fun insertExampleEntity(todo: ExampleEntity)
+    suspend fun insertExampleEntity(exampleEntity: ExampleEntity)
 
     @Query("SELECT * FROM exampleentity")
     fun getExampleEntityList(): Flow<MutableList<ExampleEntity>>

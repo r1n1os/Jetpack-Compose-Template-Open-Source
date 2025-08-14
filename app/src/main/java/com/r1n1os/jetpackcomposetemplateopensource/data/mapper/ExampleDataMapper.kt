@@ -1,10 +1,14 @@
 package com.r1n1os.jetpackcomposetemplateopensource.data.mapper
 
 import com.r1n1os.jetpackcomposetemplateopensource.data.localDatabase.entity.ExampleEntity
-import com.r1n1os.jetpackcomposetemplateopensource.domain.models.ExampleUIModel
+import com.r1n1os.jetpackcomposetemplateopensource.domain.models.ExampleModel
 import java.util.UUID
 
-fun ExampleUIModel.toExampleEntity(): ExampleEntity {
+/**
+ * This mapper as is in the data layer is server as mapper
+ * between the domain and data layers.
+ * */
+fun ExampleModel.toExampleEntity(): ExampleEntity {
     return ExampleEntity(
         id = UUID.randomUUID().toString(),
         name = name,
@@ -13,8 +17,8 @@ fun ExampleUIModel.toExampleEntity(): ExampleEntity {
     )
 }
 
-fun ExampleEntity.toExampleUIModel(): ExampleUIModel {
-    return ExampleUIModel(
+fun ExampleEntity.toExampleModel(): ExampleModel {
+    return ExampleModel(
         name = name,
         age = age,
     )

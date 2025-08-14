@@ -1,9 +1,9 @@
 package com.r1n1os.jetpackcomposetemplateopensource.domain.repository
 
-import com.r1n1os.jetpackcomposetemplateopensource.domain.models.ExampleUIModel
+import com.r1n1os.jetpackcomposetemplateopensource.domain.models.ExampleModel
 import kotlinx.coroutines.flow.Flow
 
 interface ExampleRepository {
-    fun insertExampleModel(exampleModel: ExampleUIModel)
-    fun getExampleModelList(): Flow<MutableList<ExampleUIModel>>
+    suspend fun insertExampleModel(exampleModel: ExampleModel)
+    suspend fun getExampleModelList(): Flow<MutableList<ExampleModel>>
 }

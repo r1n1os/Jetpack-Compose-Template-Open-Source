@@ -39,7 +39,7 @@ Jetpack-Compose-Template-Open-Source is a production-ready Jetpack Compose Andro
   * buildToolsVersion: 36.0.0
   * ndkVersion: 28.1.13356709
   * gradle: 9.0.0
-  * kotlin: 2.2.0
+  * kotlin: 2.2.10
 
 ---
 ## 🧱 Project Structure
